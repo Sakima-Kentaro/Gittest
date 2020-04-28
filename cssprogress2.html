@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        七味上級
+    </title>
+    <style>
+        .left{writing-mode:vertical-rl;text-orientation: sideways;font-size: 5px;background-color: blueviolet;}
+        .blackzone{background-color: black;}
+        .under{writing-mode:vertical-rl;text-orientation: sideways;font-size: 5px;text-align: right;background-color: blueviolet;}
+        .bookcontent{background-color: rgb(185, 118, 248);position: relative;}
+        #sentence{position: relative;padding-left: 18px;}
+        #sentence::before{position: absolute;content:'';width: 0;height: 0;border:solid 6px transparent;border-left:solid 8px blueviolet;top: 50%;left: 0;margin-top: -5px;}
+        .levelsentence{position: relative;padding-left: 16px;font-size: 18px;}
+        #one::before{position: absolute;content: "1";color: white;background-color: red;width: 18px;height: 18px;top: 10%;left: 0;border-top: -5px;border: black;text-align: center;}
+        #two::before{position: absolute;content: "2";color: white;background-color: orange;width: 17.5px;height: 17.5px;top: 0%;left: 0;border-top: -5px;border: black;text-align: center;}
+        #three::before{position: absolute;content: "3";color: white;background-color: green;width: 17.5px;height: 17.5px;top: 0%;left: 0;border-top: -5px;border: black;text-align: center;}
+        #four::before{position: absolute;content: "4";color: white;background-color: blue;width: 17.5px;height: 17.5px;top: 0%;left: 0;border-top: -5px;border: black;text-align: center;}
+        #five::before{position: absolute;content: "5";color: white;background-color: blueviolet;width: 17.5px;height: 17.5px;top: 0%;left: 0;border-top: -5px;border: black;text-align: center;}
+        #six::before{position: absolute;content: "6";color: white;background-color: brown;width: 17.5px;height: 17.5px;top: 0%;left: 0;border-top: -5px;border: black;text-align: center;}
+        .right{float: right;font-size: 12px;}
+        .border{border-bottom: solid 1px black;}
+        .total{display: grid;grid-template-columns: 100px 400px;grid-template-rows: 200px 350px 200px;border: solid 1px black;width: 500px;height: 750px;}
+        .border{border-bottom: solid 1px black;}
+        .level{position:absolute;width: 250px;top: 100px;right: 0px;}
+        .circle span{font: 26px Monaco, MonoSpace;height: 200px;background-color: blueviolet; position: absolute;	color:black;width: 20px;left: 380px;top: 10px;transform-origin: bottom center;}
+        .char1{transform: rotate(-34.8deg);}
+        .char2{transform: rotate(-23.2deg);}
+        .char3{transform: rotate(-11.6deg);}
+        .char4{transform: rotate(0deg);}
+        .char5{transform: rotate(11.6deg);}
+        .char6{transform: rotate(23.2deg);}
+        .char7{transform: rotate(34.8deg);}
+        .char8{transform: rotate(46.4deg);}
+        .char9{transform: rotate(58deg);}
+        .char10{transform: rotate(69.6deg);}
+        .char11{transform: rotate(81.2deg);}
+        .char12{transform: rotate(92.8deg);}
+        .char13{transform: rotate(104.4deg);}
+        .char14{transform: rotate(116deg);}
+        .char15{transform: rotate(127.6deg);}
+        .char16{transform: rotate(139.2deg);}
+        .char17{transform: rotate(150.8deg);}
+        .char18{transform: rotate(162.4deg);}
+        .char19{transform: rotate(174deg);}
+        .char20{transform: rotate(185.6deg);}
+        .char21{transform: rotate(197.2deg);}
+        .char22{transform: rotate(208.8deg);}
+        .char23{transform: rotate(220.4deg);}
+        .char24{transform: rotate(232deg);}
+        .char25{transform: rotate(243.6deg);}
+        .char26{transform: rotate(255.2deg);}
+        .char27{transform: rotate(266.8deg);}
+        .char28{transform: rotate(278.4deg);}
+        .char29{transform: rotate(290deg);}
+        .char30{transform: rotate(301.6deg);}
+        .char31{transform: rotate(313.2deg);}
+    </style>
+    <meta http-equiv="Content-Type"  charset="utf-8" />
+</head>
+<body>
+    <div class="total">
+    <div class="left">
+        READING WORKBOOK<br>STEP BY STEP
+    </div>
+    <div class="booktitle">
+        <h1 id="bigtitle">
+            英語長文
+        </h1>
+        <h2 id="smalltitle">
+            レベル別問題集
+        </h2>
+    </div>
+    <div class="blackzone">
+
+    </div>
+    <div class="bookcontent">
+        <div class="level">
+            <div class="border"><span class="levelsentence" id="one">超基礎編</span><span class="right">中学～公立高校受験レベル</span></div>
+            <div class="border">
+                <span class="levelsentence" id="two">基礎編</span><span class="right">公立・私立高校合格レベル</span>
+
+            </div>
+            <div class="border">
+                <span class="levelsentence" id="three">標準編</span><span class="right">センター試験（基礎）レベル</span>
+            </div>
+            <div class="border">
+                <span class="levelsentence" id="four">中級編</span><span class="right">センター試験・中堅私大レベル</span>
+            </div>
+            <div class="border">
+                <span class="levelsentence" id="five">上級編</span><span class="right">有名私大・国公立大レベル</span>           
+            </div>
+            <div class="border">
+            <span class="levelsentence" id="six">難関編</span><span class="right">難関私大・難関国公立大レベル</span>
+            </div>         
+        </div>
+    </div>
+    <div class="under">
+        TETSUYA YASUKOCHI<br>
+        HIDEKI OIWA
+    </div>
+    <div class="last">
+        <div class="apeal">
+          <p id="sentence">
+              有名私大合格
+          </p>
+          <p>英語長文を得点源に</p>
+        </div>
+    </div>
+    </div>
+    <span class="circle">
+        <span class="char1">★</span>
+        <span class="char2">R</span>
+        <span class="char3">E</span>
+        <span class="char4">A</span>
+        <span class="char5">D</span>
+        <span class="char6">I</span>
+        <span class="char7">N</span>
+        <span class="char8">G</span>
+        <span class="char9"> </span>
+        <span class="char10">W</span>
+        <span class="char11">O</span>
+        <span class="char12">R</span>
+        <span class="char13">K</span>
+        <span class="char14">B</span>
+        <span class="char15">O</span>
+        <span class="char16">O</span>
+        <span class="char17">K</span>
+        <span class="char18"></span>
+        <span class="char19">S</span>
+        <span class="char20">T</span>
+        <span class="char21">E</span>
+        <span class="char22">P</span>
+        <span class="char23"></span>
+        <span class="char24">B</span>
+        <span class="char25">Y</span>
+        <span class="char26"></span>
+        <span class="char27">S</span>
+        <span class="char28">T</span>
+        <span class="char29">E</span>
+        <span class="char30">P</span>
+        <span class="char31"></span>
+
+    
+    </span>
+
+</body>
